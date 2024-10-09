@@ -137,3 +137,60 @@ header div:last-child{
     gap: 2rem;
 }
 
+
+
+
+.carousel-container {
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carousel-item {
+    min-width: 25%;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item img {
+    width: 100px;
+    height: 150px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
